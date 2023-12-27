@@ -1,4 +1,5 @@
 import React from "react";
+import './index.css'
 import Sidebar from "./components/Sidebar";
 import MidArea from "./components/MidArea";
 import PreviewArea from "./components/PreviewArea";
