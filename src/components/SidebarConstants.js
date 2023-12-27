@@ -6,16 +6,7 @@ export const motionComponents = [
   "TURN_ANTI_CLOCKWISE",
 ];
 
-export const looksComponents = [
-  "SAY_MESSAGE",
-  "SAY_MESSAGE_WITH_TIMER",
-  "THINK",
-  "THINK_TIMER",
-  "HIDE_MESSAGE",
-  "SIZE",
-  "SHOW",
-  "HIDE",
-];
+
 
 export const eventsComponents = ["BROADCAST"];
 

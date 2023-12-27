@@ -3,12 +3,7 @@ import CatSprite from "./CatSprite";
 import { connect } from "react-redux";
 import { addCharacter, setActive } from "../redux/character/actions";
 import { createStyles, makeStyles } from "@material-ui/core/styles";
-import InputLabel from "@material-ui/core/InputLabel";
-import MenuItem from "@material-ui/core/MenuItem";
-import FormControl from "@material-ui/core/FormControl";
-import Select from "@material-ui/core/Select";
-import Button from "@material-ui/core/Button";
-import AddCircleIcon from "@material-ui/icons/AddCircle";
+
 
 // Styling for MaterialUI Components
 const useStyles = makeStyles((theme) =>
@@ -84,45 +79,7 @@ function PreviewArea({ character, add_character, set_active }) {
         <div className="font-bold mb-5 text-center border border-2 rounded text-white bg-green-400 p-2 w-auto">
           Preview Area
         </div>
-        {/* <div>
-          <FormControl className={classes.formControl}>
-            <InputLabel shrink id="demo-simple-select-placeholder-label-label">
-              Active
-            </InputLabel>
-            <Select
-              labelId="demo-simple-select-placeholder-label-label"
-              id="demo-simple-select-placeholder-label"
-              value={active}
-              onChange={(e) => handleChange(e)}
-              displayEmpty
-              className={classes.selectEmpty}
-            >
-              {character.characters.map((x, i) => {
-                const first = x.id.charAt(0).toUpperCase();
-                const name = first + x.id.substr(1);
-
-                return (
-                  <MenuItem key={i} value={x.id}>
-                    {name}
-                  </MenuItem>
-                );
-              })}
-            </Select>
-          </FormControl>
-        </div> */}
-
-        {/* <div>
-          <Button
-            variant="contained"
-            color="secondary"
-            className={classes.button}
-            startIcon={<AddCircleIcon />}
-            onClick={() => add_character()}
-          >
-            Create{" "}
-          </Button>
-        </div> */}
-      </div>
+        </div>
       <div className="flex justify-around h-full">
         {character.characters.map((x, i) => {
           return (
